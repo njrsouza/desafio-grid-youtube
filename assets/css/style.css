@@ -1,4 +1,40 @@
+body {
+    display: grid;
+    grid-template-rows: 56px 968px;
+
+}
+
+ul {
+    list-style: none;
+}
+
 header {
     display: flex;
+}
 
+main {
+    display: grid;
+    grid-template-columns: 218px auto;
+}
+
+#videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.descricao {
+    display: flex;
+}
+
+.photo-channel {
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    align-items: start;
+
+}
+
+.item {
+    padding: 16px;
 }
