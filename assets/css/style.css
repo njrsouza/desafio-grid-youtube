@@ -1,15 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Roboto";
+}
+
 body {
     display: grid;
     grid-template-rows: 56px 968px;
+}
 
+li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 main {
@@ -17,10 +35,64 @@ main {
     grid-template-columns: 218px auto;
 }
 
+#left,
+#right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#film,
+#sino {
+    width: 24px;
+    height: 24px;
+}
+
+#profile-photo {
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+}
+
 #videos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+}
+
+#barras {
+    width: 24px;
+    height: 24px;
+}
+
+#logo-youtube {
+    width: 90px;
+    height: 20px;
+}
+
+#search-content {
+    display: flex;
+    justify-content: center;
+    width: 404px;
+    height: 40px;
+    border: 1px solid #cccccc;
+}
+
+
+#search-box {
+    width: 348px;
+    border: 1px solid #cccccc;
+}
+
+#search-button {
+    width: 57px;
+    background-color: #f8f8f8;
+    border: 1px solid #cccccc;
+    background-image: url("../images/pesquisa.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+
 }
 
 .descricao {
@@ -32,9 +104,10 @@ main {
     height: 42px;
     border-radius: 100%;
     align-items: start;
-
 }
 
 .item {
     padding: 16px;
+    height: 262px;
+    width: fit-content;
 }
