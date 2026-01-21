@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('reset.css');
 
 * {
     font-family: "Roboto";
@@ -7,6 +8,7 @@
 body {
     display: grid;
     grid-template-rows: 56px 968px;
+    margin: 0px;
 }
 
 li {
@@ -22,6 +24,11 @@ ul {
     gap: 22px;
     font-size: 14px;
     font-weight: 400;
+    padding-left: 24px;
+}
+
+nav {
+    background-color: #ffffff;
 }
 
 header {
@@ -33,6 +40,7 @@ header {
 main {
     display: grid;
     grid-template-columns: 218px auto;
+    background-color: rgb(238, 238, 238);
 }
 
 #left,
@@ -41,6 +49,15 @@ main {
     gap: 20px;
     align-items: center;
 }
+
+#right {
+    padding-right: 24px;
+}
+
+#left {
+    padding-left: 24px;
+}
+
 
 #film,
 #sino {
@@ -57,7 +74,10 @@ main {
 #videos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 262px 262px 262px;
+    justify-items: center;
+    margin-top: 25px;
+
 }
 
 #barras {
@@ -96,7 +116,26 @@ main {
 }
 
 .descricao {
-    display: flex;
+    display: inline-flex;
+    gap: 10px;
+    width: fit-content;
+    max-width: 249px;
+}
+
+h4,
+p {
+    margin: 0px;
+}
+
+h4 {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 12px;
 }
 
 .photo-channel {
@@ -107,7 +146,19 @@ main {
 }
 
 .item {
-    padding: 16px;
+
     height: 262px;
     width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-sizing: border-box;
+    padding: 16px;
+
+}
+
+.foto-miniatura {
+    width: 250px;
+    height: 140px;
+    display: flex;
 }
